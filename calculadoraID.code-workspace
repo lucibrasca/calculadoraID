@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../proyecto-js2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "calculadoraID"
+	}
+}

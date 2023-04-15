@@ -41,26 +41,26 @@ if ((sexo.toUpperCase() == "F") && (contadorIngestaDiaria < 1500))
     caloriasRestantes = 1500 - contadorIngestaDiaria;
     porcentaje = (contadorIngestaDiaria*100) / 1500;
 
-    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kCal. Esto equivale al "+porcentaje+"% de la IDR.");
+    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kcal. Esto equivale al "+porcentaje+"% de la IDR.");
 }
 else if ((sexo.toUpperCase() == "M") && (contadorIngestaDiaria < 2000))
 {
     caloriasRestantes = 2000 - contadorIngestaDiaria;
     porcentaje = (contadorIngestaDiaria*100) / 2000;
 
-    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kCal. Esto equivale al "+porcentaje+"% de la IDR.");
+    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kcal. Esto equivale al "+porcentaje+"% de la IDR.");
 }
 else if ((sexo.toUpperCase() == "F") && (contadorIngestaDiaria > 1500) && (contadorIngestaDiaria < 2000))
 {
-    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kCal. Su ingesta se encuentra dentro de la IDR, esto es entre 1500 y 2000 kCal/día en las mujeres.");
+    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kcal. Por lo tanto, se encuentra dentro de la IDR, entre 1500 y 2000 kcal/día en las mujeres.");
 }
 else if ((sexo.toUpperCase() == "M") && (contadorIngestaDiaria > 2000) && (contadorIngestaDiaria < 2500))
 {
-    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kCal. Su ingesta se encuentra dentro de la IDR, esto es entre 2000 y 2500 kCal/día en los hombres.");
+    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kcal. Por lo tanto, se encuentra dentro de la IDR, entre 2000 y 2500 kcal/día en los hombres.");
 } 
 else
 {
-    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kCal. Le recomendamos que reduzca su ingesta diaria.");
+    alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kcal. Le recomendamos que reduzca la misma.");
 }
 
 
