@@ -4,6 +4,9 @@ let alimento = "";
 let grupoAlimento = 0;
 let unidadMedida = "";
 let contadorIngestaDiaria = 0;
+const LIMITE1 = 1500; // Límite Inferior Femenino
+const LIMITE2 = 2000; // Límite Superior Femenino e Inferior Masculino
+const LIMITE3 = 2500; // Límite Superior Masculino
 
 
 while ( !fin )
@@ -36,25 +39,25 @@ while ( !fin )
 let caloriasRestantes = 0;
 let porcentaje = 0;
 
-if ((sexo.toUpperCase() == "F") && (contadorIngestaDiaria < 1500))
+if ((sexo.toUpperCase() == "F") && (contadorIngestaDiaria < LIMITE1))
 {
-    caloriasRestantes = 1500 - contadorIngestaDiaria;
-    porcentaje = (contadorIngestaDiaria*100) / 1500;
+    caloriasRestantes = LIMITE1 - contadorIngestaDiaria;
+    porcentaje = (contadorIngestaDiaria*100) / LIMITE1;
 
     alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kcal. Esto equivale al "+porcentaje+"% de la IDR.");
 }
-else if ((sexo.toUpperCase() == "M") && (contadorIngestaDiaria < 2000))
+else if ((sexo.toUpperCase() == "M") && (contadorIngestaDiaria < LIMITE2))
 {
-    caloriasRestantes = 2000 - contadorIngestaDiaria;
-    porcentaje = (contadorIngestaDiaria*100) / 2000;
+    caloriasRestantes = LIMITE2 - contadorIngestaDiaria;
+    porcentaje = (contadorIngestaDiaria*100) / LIMITE2;
 
     alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kcal. Esto equivale al "+porcentaje+"% de la IDR.");
 }
-else if ((sexo.toUpperCase() == "F") && (contadorIngestaDiaria > 1500) && (contadorIngestaDiaria < 2000))
+else if ((sexo.toUpperCase() == "F") && (contadorIngestaDiaria > LIMITE1) && (contadorIngestaDiaria < LIMITE2))
 {
     alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kcal. Por lo tanto, se encuentra dentro de la IDR, entre 1500 y 2000 kcal/día en las mujeres.");
 }
-else if ((sexo.toUpperCase() == "M") && (contadorIngestaDiaria > 2000) && (contadorIngestaDiaria < 2500))
+else if ((sexo.toUpperCase() == "M") && (contadorIngestaDiaria > LIMITE2) && (contadorIngestaDiaria < LIMITE3))
 {
     alert ("Su ingesta del día fue de "+contadorIngestaDiaria+" kcal. Por lo tanto, se encuentra dentro de la IDR, entre 2000 y 2500 kcal/día en los hombres.");
 } 
