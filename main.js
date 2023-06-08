@@ -399,7 +399,7 @@ const listaGrupo = document.querySelector("#grupo");
 //fetch('https://lucibrasca.github.io/grupos.json')
 
 //Completa el select de los grupos desde un archivo json usando fetch
-fetch('https://lucibrasca.github.io/grupos.json')
+fetch('grupos.json')
 .then((response) => response.json())
 .then((data) => {
     data.forEach((grupo) => {
